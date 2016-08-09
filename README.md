@@ -1,0 +1,2 @@
+# RegistrationApp
+A pretty simple android app with Login, Register and Profile UI which uses MySQL database and PHP at backend to store user information into encrypted form. User can also change his password from profile section. The App uses DBOperations.php, Functions.php, and index.php files to talk to your MySQL database. You can upload the PHP files on live server and make changes to DBOperations.php. Set the Base URL in Constants.java file and POST request URI in RequestInterface.java file.
