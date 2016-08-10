@@ -9,6 +9,7 @@ public class User {private String name;
     private String password;
     private String old_password;
     private String new_password;
+    private String code;
 
     public String getName() {
         return name;
@@ -40,6 +41,10 @@ public class User {private String name;
 
     public void setNew_password(String new_password) {
         this.new_password = new_password;
+    }
+
+    public void setCode(String code) {
+        this.code = code;
     }
 
 }
