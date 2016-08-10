@@ -172,7 +172,7 @@ public function __construct() {
         $now = new DateTime(date("Y-m-d H:i:s"));
         $diff = $now->getTimestamp() - $old->getTimestamp();
         
-        if($diff < 120) {
+        if($diff < 300) {
 
             return $this -> changePassword($email, $password);
 
