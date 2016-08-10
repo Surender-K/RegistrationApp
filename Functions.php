@@ -215,14 +215,14 @@ public function sendEmail($email,$temp_password){
 
   $mail = $this -> mail;
   $mail->isSMTP();
-  $mail->Host = 'sg2plcpnl0058.prod.sin2.secureserver.net';
+  $mail->Host = 'smtp.gmail.com';
   $mail->SMTPAuth = true;
-  $mail->Username = 'info@mydemo1.com';
-  $mail->Password = 'Orbit@786';
+  $mail->Username = 'my.name@gmail.com';
+  $mail->Password = '123456';
   $mail->SMTPSecure = 'tls';
   $mail->Port = 587;
  
-  $mail->From = 'apps@mydemo1.com';
+  $mail->From = 'apps@myapp.com';
   $mail->FromName = 'Android App';
   $mail->addAddress($email, 'App User');
  
