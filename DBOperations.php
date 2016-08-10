@@ -2,10 +2,10 @@
 
 class DBOperations{
 
-	 private $host = '166.62.28.134';
-	 private $user = 'appdbuser';
-	 private $db = 'appdb2016';
-	 private $pass = 'oJgWpRXGVKNe';
+	 private $host = 'localhost';
+	 private $user = 'root';
+	 private $db = 'appdb';
+	 private $pass = '';
 	 private $conn;
 
 public function __construct() {
