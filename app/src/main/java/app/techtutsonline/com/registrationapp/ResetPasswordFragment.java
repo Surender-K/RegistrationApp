@@ -32,6 +32,7 @@ public class ResetPasswordFragment extends Fragment implements View.OnClickListe
     private AppCompatButton btn_reset;
     private EditText et_email,et_code,et_password;
     private TextView tv_timer;
+    private TextView tv_login;
     private ProgressBar progress;
     private boolean isResetInitiated = false;
     private String email;
@@ -55,14 +56,18 @@ public class ResetPasswordFragment extends Fragment implements View.OnClickListe
         et_password.setVisibility(View.GONE);
         et_code.setVisibility(View.GONE);
         tv_timer.setVisibility(View.GONE);
+        tv_login = (TextView)view.findViewById(R.id.tv_login);
         btn_reset.setOnClickListener(this);
         progress = (ProgressBar)view.findViewById(R.id.progress);
-
+        tv_login.setOnClickListener(this);
     }
 
     @Override
     public void onClick(View v) {
         switch (v.getId()){
+            case R.id.tv_login:
+                goToLogin();
+                break;
 
             case R.id.btn_reset:
 
