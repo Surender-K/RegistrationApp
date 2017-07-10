@@ -4,7 +4,7 @@ package app.techtutsonline.com.registrationapp;
  * Created by surender on 08-08-2016.
  */
 public class Constants {
-    public static final String BASE_URL = "http://apps.mydemo1.com/";
+    public static final String BASE_URL = "http://apps.mydomain.com/";
     public static final String REGISTER_OPERATION = "register";
     public static final String LOGIN_OPERATION = "login";
     public static final String CHANGE_PASSWORD_OPERATION = "chgPass";
